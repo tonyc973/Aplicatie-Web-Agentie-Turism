@@ -93,7 +93,7 @@
 <body>
     <div class="container">
         <h1>Login</h1>
-        <form action="/caietul_mereu/users/login" method="POST">
+        <form action="/agentie_turism/users/login" method="POST">
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" required>
 
