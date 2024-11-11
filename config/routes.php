@@ -1,15 +1,15 @@
 <?php
 $routes = [
-    "caietul_mereu/debts/index" => ["DebtController", "index"],
-    "caietul_mereu/users/index" => ["UserController", "index"],
-    "caietul_mereu/users/register" => ["UserController", "register"],
-    "caietul_mereu/users/login" => ["UserController", "login"],
-    "caietul_mereu/users/logout" => ["UserController", "logout"],
-    "caietul_mereu/tours/index" => ["TourController", "index"],
-    "caietul_mereu/tours/create" => ["TourController", "create"],
-    "caietul_mereu/tours/delete" => ["TourController", "delete"],
-    "caietul_mereu/bookings/index" => ["BookingController", "index"],
-    "caietul_mereu/bookings/book" => ["BookingController", "book"],
+    "agentie_turism/debts/index" => ["DebtController", "index"],
+    "agentie_turism/users/index" => ["UserController", "index"],
+    "agentie_turism/users/register" => ["UserController", "register"],
+    "agentie_turism/users/login" => ["UserController", "login"],
+    "agentie_turism/users/logout" => ["UserController", "logout"],
+    "agentie_turism/tours/index" => ["TourController", "index"],
+    "agentie_turism/tours/create" => ["TourController", "create"],
+    "agentie_turism/tours/delete" => ["TourController", "delete"],
+    "agentie_turism/bookings/index" => ["BookingController", "index"],
+    "agentie_turism/bookings/book" => ["BookingController", "book"],
     "" => ["HomePageController", "index"]
 ];
 
