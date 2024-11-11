@@ -31,7 +31,7 @@ class UserController{
 
             if ($password !== $confirmPassword) {
                 $_SESSION['error'] = "Passwords do not match.";
-                header("Location: /caietul_mereu/users/register");
+                header("Location: /agentie_turism/users/register");
                 exit;
             }
 
@@ -43,10 +43,10 @@ class UserController{
             require_once "app/views/users/register.php";
             if ($userCreated) {
                 $_SESSION['success'] = "Registration successful! Please login.";
-                header("Location: /caietul_mereu/users/login");
+                header("Location: /agentie_turism/users/login");
             } else {
                 $_SESSION['error'] = "Registration failed. Email might already be in use.";
-                header("Location: /caietul_mereu/register");
+                header("Location: /agentie_turism/register");
             }
         } else {
             require_once "app/views/users/register.php";
@@ -63,7 +63,7 @@ class UserController{
                 $_SESSION['user_id'] = $user['user_id'];
                 $_SESSION['email'] = $user['email'];
                 $_SESSION['role'] = $user['role'];
-                header("Location: /caietul_mereu/tours/index");
+                header("Location: /agentie_turism/tours/index");
             } else {
                 echo "Invalid credentials!";
             }
@@ -73,7 +73,7 @@ class UserController{
 
     public static function logout() {
         session_destroy();
-        header("Location: /caietul_mereu/users/login");
+        header("Location: /agentie_turism/users/login");
     }
 
 }
