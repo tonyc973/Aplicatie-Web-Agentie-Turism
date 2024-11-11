@@ -105,7 +105,7 @@
         <?php unset($_SESSION['error']); ?>
     <?php endif; ?>
 
-    <form action="/caietul_mereu/users/register" method="POST">
+    <form action="/agentie_turism/users/register" method="POST">
         <input type="text" name="first_name" placeholder="First Name" required>
         <input type="text" name="last_name" placeholder="Last Name" required>
         <input type="email" name="email" placeholder="Email" required>
@@ -113,7 +113,7 @@
         <input type="password" name="confirm_password" placeholder="Confirm Password" required>
         <input type="submit" value="Register">
     </form>
-    <p>Already have an account? <a href="/caietul_mereu/users/login">Login here</a></p>
+    <p>Already have an account? <a href="/agentie_turism/users/login">Login here</a></p>
 </div>
 
 </body>
