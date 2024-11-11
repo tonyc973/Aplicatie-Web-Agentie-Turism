@@ -22,7 +22,7 @@ class bookingController {
         requireLogin();
         $tour_id = $_POST['tour_id'];
         Booking::createBooking($_SESSION['user_id'], $tour_id);
-        header("Location: /caietul_mereu/bookings/index");
+        header("Location: /agentie_turism/bookings/index");
     }
 }
 ?>
